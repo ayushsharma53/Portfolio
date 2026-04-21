@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@200;400;500;700&display=swap');
+
+:root {
+  --color-surface: #0b1326;
+  --color-surface-container-low: #131b2e;
+  --color-surface-container-high: #222a3d;
+  --color-surface-highest: #2d3449;
+  
+  --color-primary: #007AFF; 
+  --color-primary-light: #adc6ff;
+  --color-primary-container: #4b8eff;
+  
+  --color-on-surface: #dae2fd;
+  --color-on-surface-variant: #c1c6d7;
+  --color-outline-variant: #414755;
+
+  --font-manrope: 'Manrope', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1.4rem;
+  --spacing-5: 1.7rem;
+  --spacing-8: 2.75rem;
+  --spacing-20: 7rem;
+  --spacing-24: 8.5rem;
+
+  --radius-sm: 0.125rem;
+  --radius-md: 0.375rem;
+  --radius-full: 9999px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  font-family: var(--font-inter);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-image: radial-gradient(circle at top right, rgba(0, 122, 255, 0.05) 0%, transparent 40%),
+                    radial-gradient(circle at bottom left, rgba(75, 142, 255, 0.05) 0%, transparent 40%);
+  background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-manrope);
+  color: var(--color-on-surface);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Typography Classes */
+.display-lg {
+  font-size: 3.5rem;
+  line-height: 1.1;
+}
+
+.label-md {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.label-sm {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(45, 52, 73, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Layout Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-4);
+}
+
+/* Button Component */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-family: var(--font-inter);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary-container));
+  color: #001a41;
+  box-shadow: 0 4px 15px rgba(0, 122, 255, 0.2);
+}
+
+.btn-primary:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 4px 20px rgba(0, 122, 255, 0.6), inset 0 1px 1px rgba(255,255,255,0.3);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid rgba(173, 198, 255, 0.2); 
+  color: var(--color-primary-light);
+}
+
+.btn-secondary:hover {
+  background: rgba(173, 198, 255, 0.05);
+  box-shadow: 0 4px 15px rgba(173, 198, 255, 0.1);
+  transform: translateY(-2px);
+}
