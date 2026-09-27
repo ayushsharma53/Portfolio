@@ -26,7 +26,7 @@ const Projects = () => {
     title: 'Resume Analyzer',
     description: 'Advanced ATS scoring platform to bridge the gap between job descriptions and professional resumes.',
     statusText: 'ATS Score: High Precision',
-    demoLink: 'https://github.com/ayushsharma53/Resume-Analyzer',
+    demoLink: 'https://resume-analyzer-frontend-8xdc.onrender.com/',
     featured: true
   },
   {
