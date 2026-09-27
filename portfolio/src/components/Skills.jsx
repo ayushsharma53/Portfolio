@@ -5,7 +5,8 @@ const Skills = () => {
     { name: 'Operating Systems', abbr: 'OS' },
     { name: 'Networking', abbr: 'CN' },
     { name: 'Database Management', abbr: 'DBMS' },
-    { name: 'Machine Learning', abbr: 'ML' }
+    { name: 'Machine Learning', abbr: 'ML' },
+    { name: 'Cloud Computing', abbr: 'CC' }
   ];
 const dataAnalysisTools = [
   'Python',
@@ -21,7 +22,7 @@ const dataAnalysisTools = [
   'VectorDb',
   'RAG'
 ];
-  const programmingLanguages = ['C++', 'Java', 'JavaScript, Python'];
+  const programmingLanguages = ['C++', 'Java', 'JavaScript', 'Python'];
   const mernFrameworks = ['MongoDB', 'Express.js', 'React', 'Node.js'];
 
   return (
