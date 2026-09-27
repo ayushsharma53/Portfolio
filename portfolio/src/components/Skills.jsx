@@ -7,8 +7,21 @@ const Skills = () => {
     { name: 'Database Management', abbr: 'DBMS' },
     { name: 'Machine Learning', abbr: 'ML' }
   ];
-
-  const programmingLanguages = ['C++', 'Java', 'JavaScript'];
+const dataAnalysisTools = [
+  'Python',
+  'Pandas',
+  'NumPy',
+  'Matplotlib',
+  'Seaborn',
+  'SQL',
+  'PySpark',
+  'Machine Learning',
+  'Generative AI',
+  'Embedding',
+  'VectorDb',
+  'RAG'
+];
+  const programmingLanguages = ['C++', 'Java', 'JavaScript, Python'];
   const mernFrameworks = ['MongoDB', 'Express.js', 'React', 'Node.js'];
 
   return (
@@ -41,7 +54,19 @@ const Skills = () => {
               ))}
             </div>
           </div>
-
+ <div style={styles.card}>
+  <div className="label-sm" style={styles.cardLabel}>Data & AI</div>
+  <h3>Data Analytics + AI/ML</h3>
+  <p style={styles.cardDesc}>
+    Working with data using Python while building a strong theoretical foundation in AI/ML concepts and gradually moving toward practical AI engineering.
+  </p>
+  <div style={styles.miniPillContainer}>
+    {dataAnalysisTools.map((tool, idx) => (
+      <div key={idx} style={styles.miniPill}>{tool}</div>
+    ))}
+  </div>
+</div>
+          
           <div style={styles.cardFill}>
             <div className="label-sm" style={styles.cardLabel}>Core CS Fundamentals</div>
             <div style={styles.pillContainer}>
