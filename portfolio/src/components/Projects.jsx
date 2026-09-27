@@ -28,7 +28,21 @@ const Projects = () => {
     statusText: 'ATS Score: High Precision',
     demoLink: 'https://github.com/ayushsharma53/Resume-Analyzer',
     featured: true
-  }
+  },
+  {
+  title: 'Jira Lite',
+  description: 'A lightweight project management platform for organizing workspaces, projects, and tasks with role-based collaboration, filtering, and workflow tracking.',
+  statusText: 'Production Ready',
+  demoLink: 'https://jira-lite-8vp0.onrender.com/',
+  featured: true
+},
+{
+  title: 'Real Estate Management System',
+  description: 'A full-stack property management platform connecting customers, agents, and administrators through secure property listings, bookings, and role-based dashboards.',
+  statusText: 'Production Ready',
+  demoLink: 'https://rems-frontend-eight.vercel.app/',
+  featured: true
+},
 ];
 
 
